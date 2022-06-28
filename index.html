@@ -88,8 +88,10 @@
       <script>
         
         document.getElementById('thankYouBox').style.display = 'none';
+        rating()
         
         const rating = (rating) => {
+          
           document.getElementById('selections').innerHTML = `You selected ${rating} out of 5`;
         };
     
