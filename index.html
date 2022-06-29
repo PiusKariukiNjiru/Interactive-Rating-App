@@ -77,8 +77,8 @@
       <div class="note_img">
         <img src="thanks.svg">
       </div>
-      <div class="selection">
-        <p id="selections"></p>
+      <div class="selections">
+        <p id="selectiontext"></p>
       </div>
       <div class="thankyou_note">
         <h1>Thank you</h1>
@@ -86,16 +86,18 @@
       </div>
 
       <script>
+
         
         document.getElementById('thankYouBox').style.display = 'none';
-        rating()
         
         const rating = (rating) => {
-          
-          document.getElementById('selections').innerHTML = `You selected ${rating} out of 5`;
+          document.getElementById('selectiontext').innerHTML = `You selected ${rating} out of 5`;
         };
+        
     
         const submit = () => {
+          const rate_value = document.querySelector('input[name="rating"]:checked').value;
+          rating(rate_value)
           document.getElementById('ratings').style.display = 'none';
           document.getElementById('thankYouBox').style.display = 'block';
         }

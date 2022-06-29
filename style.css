@@ -115,16 +115,15 @@ input[type=radio]:checked+label{
     text-align: center;
     
 }
-.selection{
-    background-color: rgb(83, 78, 70);
-    color: rgb(255, 115, 0);
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    border-radius: 50px;
-    margin-top: 20px;
-    width: 250px;
+
+
+#selectiontext{
+    color: orangered;
+    background-color: rgb(94, 91, 91);
+    border-radius: 20px;
+
+    
+
 }
 .thankyou_note p{
     color: rgb(151, 148, 148);
